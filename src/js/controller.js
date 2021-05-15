@@ -19,6 +19,7 @@ const controlRecipeInfos = function () {
   }
 }
 
+// Here i used Event delegation
 _container.addEventListener('click', function (e) {
   if (e.target.classList.contains('serachRecipe--btn')) controlRecipeInfos()
 })
