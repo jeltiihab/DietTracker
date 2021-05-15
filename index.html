@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Line Awesom-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+    <!--Line Awesom-->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <!--Controller-->
+    <script type="module" defer src="src/js/controller.js"></script>
+    <!--Controller-->
+
+    <title>Diet Planner</title>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="nav-toggle" />
+    <!--SIDE BAR START-->
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2>
+          <span class="las la-dumbbell"></span>
+          <span>Diet Planner</span>
+        </h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <span class="las la-heartbeat"></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li id="food-analyse">
+            <a href="#">
+              <span class="las la-apple-alt"></span>
+              <span >Food calculator</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="las la-calculator"></span>
+              <span>Calorie Calculator</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="las la-hand-holding-heart"></span>
+              <span>Fasting</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--SIDE BAR END-->
+
+    <div class="main-content">
+      <!--HEADER START-->
+      <header>
+        <div class="header-title">
+          <h2>
+            <label for="nav-toggle">
+              <span class="las la-bars"></span>
+            </label>
+            Dashboard
+          </h2>
+        </div>
+        <!--SEARCH START-->
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search here" />
+        </div>
+        <!--SEARCH END-->
+        <div class="user-wrapper">
+          <img src="src/img/ID2.jpg" width="40px" height="40px" alt="avatar" />
+          <div>
+            <h4>JELTI Ihab</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </header>
+      <!--HEADER END-->
+      <!--MAIN START-->
+      <main>
+        <!--CARDS START-->
+        <div class="cards">
+          <div class="card-single">
+            <div>
+              <h1>75 kg</h1>
+              <span>Current weight</span>
+            </div>
+            <div>
+              <span class="las la-weight"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>179 cm</h1>
+              <span>Current height</span>
+            </div>
+            <div>
+              <span class="las la-ruler-vertical"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>2500</h1>
+              <span>Calories per day</span>
+            </div>
+            <div>
+              <span class="las la-apple-alt"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>66 kg</h1>
+              <span>Weight goal</span>
+            </div>
+            <div>
+              <span class="las la-burn"></span>
+            </div>
+          </div>
+        </div>
+        <!--CARDS END-->
+        <div class="analyse-grid">
+          <div class="analyses">
+            <div class="card">
+
+            </div>
+          </div>
+
+        <!--CUSTOMER START-->
+        <!--<div class="customers">
+          <div class="card">
+            <div class="card-header">
+              <h3>New Customer</h3>
+              <button>
+                See All
+                <span class="las la-arrow-right"></span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="src/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="src/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="src/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="src/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="src/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!--CUSTOMER END-->
+      </main>
+      <!--MAIN END-->
+    </div>
+  </body>
+</html>

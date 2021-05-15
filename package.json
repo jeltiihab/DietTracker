@@ -1,0 +1,16 @@
+{
+  "name": "dietplanner",
+  "version": "1.0.0",
+  "description": "Track youre Dit by this magnifique tools",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "JELTI Ihab",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}
