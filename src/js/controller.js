@@ -1,10 +1,9 @@
 import * as model from './model.js'
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
-import recipeVisualisezView from './views/recipeVisualizerView.js'
+import recipeAnalyseView from './views/recipeAnalyseView.js'
 
 const _container = document.querySelector('.card')
-const _foodAnalyse = document.querySelector('#food-analyse')
 
 const controlRecipeInfos = function () {
   try {
@@ -20,12 +19,11 @@ const controlRecipeInfos = function () {
 }
 
 // Here i used Event delegation
-_container.addEventListener('click', function (e) {
-  if (e.target.classList.contains('serachRecipe--btn')) controlRecipeInfos()
-})
+// _container.addEventListener('click', function (e) {
+//   if (e.target.classList.contains('serachRecipe--btn')) controlRecipeInfos()
+// })
 
-_foodAnalyse.addEventListener('click', function () {
-  recipeVisualisezView.render()
-})
+recipeAnalyseView.addHandlerData(controlRecipeInfos)
+recipeAnalyseView.addHandlerRender()
 
 // init()
