@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Line Awesom-->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!--Line Awesom-->
+    <link rel="stylesheet" href="../Public/css/style.css" />
+    <!--JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!--JQuery-->
+    <!--Controller-->
+    <script type="module" defer src="../src/Controllers/controller.js"></script>
+    <!--Controller-->
+
+    <title>Diet Planner</title>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="nav-toggle" />
+    <!--SIDE BAR START-->
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2>
+          <img src="../Public/img/logo.svg" alt="" height="30px" width="30px" />
+          <span>Diet Planner</span>
+        </h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li id="home">
+            <a class="active sb--btn">
+              <img
+                src="../Public/img/heartbeat.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li id="food-analyse">
+            <a class="sb--btn">
+              <img
+                src="../Public/img/healthy-food.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>Food Analyse</span>
+            </a>
+          </li>
+          <li id="macros-amounts">
+            <a class="sb--btn">
+              <img
+                src="../Public/img/diet.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>Macros amounts</span>
+            </a>
+          </li>
+          <li id="bmi">
+            <a class="sb--btn">
+              <img
+                src="../Public/img/bmi.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>BMI Calculator</span>
+            </a>
+          </li>
+          <li id="ideal-weight">
+            <a class="sb--btn">
+              <!-- <span class="las la-calculator"></span> -->
+              <img
+                src="../Public/img/weightloss.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>Ideal weight</span>
+            </a>
+          </li>
+          <li id="daily-calory">
+            <a class="sb--btn">
+              <!-- <span class="las la-calculator"></span> -->
+              <img
+                src="../Public/img/calories-calculator.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>Daily calory requirements</span>
+            </a>
+          </li>
+          <li id="body-fat">
+            <a class="sb--btn">
+              <img
+                src="../Public/img/percentage.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              />
+              <span>Body Fat Percentage</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a class="sb--btn">
+              <span class="las la-calculator"></span>
+              <span>Fasting</span>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <!--SIDE BAR END-->
+
+    <div class="main-content">
+      <!--HEADER START-->
+      <header>
+        <div class="header-title">
+          <h2>
+            <label for="nav-toggle">
+              <span class="las la-bars"></span>
+            </label>
+            Dashboard
+          </h2>
+        </div>
+        <!--SEARCH START-->
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search here" />
+        </div>
+        <!--SEARCH END-->
+        <div class="user-wrapper">
+          <img
+            src="../Public/img/ID2.jpg"
+            width="40px"
+            height="40px"
+            alt="avatar"
+          />
+          <div>
+            <h4>JELTI Ihab</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </header>
+      <!--HEADER END-->
+      <!--MAIN START-->
+      <main class="main">
+        <!--CUSTOMER START-->
+        <!--<div class="customers">
+          <div class="card">
+            <div class="card-header">
+              <h3>New Customer</h3>
+              <button>
+                See All
+                <span class="las la-arrow-right"></span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="../Public/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="../Public/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="../Public/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="../Public/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+              <div class="customer">
+                <div class="info">
+                  <img
+                    src="../Public/img/ID2.jpg"
+                    width="40px"
+                    height="40px"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Lewis S. Cunningham</h4>
+                    <small>CEO Excpert</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!--CUSTOMER END-->
+      </main>
+      <!--MAIN END-->
+    </div>
+  </body>
+</html>
